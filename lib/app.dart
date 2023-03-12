@@ -10,7 +10,7 @@ class Naive extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: GoogleFonts.roboto().fontFamily),
-      home: const SplashPage(),
+      home: SplashPage(),
     );
   }
 }

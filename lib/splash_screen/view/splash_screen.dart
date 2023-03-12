@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../app_util/app_style.dart';
-import '../../home/view/home_page.dart';
+import '../../bottom_navigation.dart';
 
 class SplashPage extends StatelessWidget {
   const SplashPage({super.key});
@@ -9,14 +9,14 @@ class SplashPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: cblack,
+      backgroundColor: Colors.blueGrey.shade400,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 200,
               ),
               const Center(
@@ -37,7 +37,7 @@ class SplashPage extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => ButtomNav()),
                   );
                 },
                 child: Container(
