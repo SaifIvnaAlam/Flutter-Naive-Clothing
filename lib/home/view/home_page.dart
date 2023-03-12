@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../app_util/app_style.dart';
+import '../domain/product_model.dart';
+import 'widgets/product_card.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -11,11 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List tshirtimages = [
-    "https://t4.ftcdn.net/jpg/02/51/41/35/360_F_251413542_Hzw1f6NZHdbuBqBBRAmABnp7tlHNCKSJ.jpg",
-    "https://www.yoreoyster.com/wp-content/uploads/2020/10/khaadi-canada.jpg",
-  ];
-
+  Productmodel products = Productmodel();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -145,36 +143,12 @@ class _HomePageState extends State<HomePage> {
                       crossAxisSpacing: 10,
                       mainAxisSpacing: 10,
                     ),
-                    itemCount: tshirtimages.length,
+                    itemCount: products.images.length,
                     itemBuilder: (context, index) {
-                      return Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Container(
-                            height: 150,
-                            width: 160,
-                            decoration: const BoxDecoration(
-                              image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: NetworkImage(
-                                    "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/productimage/2019/12/12/1aab2a18-6774-4f83-b292-fe301755a3351576102551329-1.jpg"),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          const Text(
-                              overflow: TextOverflow.fade,
-                              "Round Neck Royal Blue Half Sleeve"),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          const Text(
-                            "1000 taka",
-                            style: TextStyle(color: Colors.white),
-                          ),
-                        ],
+                      return ProductCard(
+                        cost: products.productPrice[index].toString(),
+                        image: products.images[index],
+                        name: products.productName[index],
                       );
                     }),
 
