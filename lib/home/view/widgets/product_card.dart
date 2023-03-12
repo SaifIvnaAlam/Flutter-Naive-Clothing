@@ -34,7 +34,7 @@ class ProductCard extends StatelessWidget {
           height: 5,
         ),
         Container(
-          height: 25,
+          height: 30,
           width: 200,
           decoration: BoxDecoration(
               color: Colors.amberAccent,
@@ -47,7 +47,7 @@ class ProductCard extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Add to cart | ",
                   style: TextStyle(
                       color: Colors.black, fontWeight: FontWeight.w400),
