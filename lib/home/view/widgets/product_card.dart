@@ -30,25 +30,34 @@ class ProductCard extends StatelessWidget {
         const SizedBox(
           height: 5,
         ),
-        Container(
-          color: Colors.black,
-          child: Text(
-            cost,
-            style: const TextStyle(color: Colors.white),
-          ),
-        ),
         const SizedBox(
           height: 5,
         ),
         Container(
-          height: 40,
-          width: 100,
+          height: 25,
+          width: 200,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(40),
-            color: Colors.amberAccent,
-          ),
+              color: Colors.amberAccent,
+              borderRadius: BorderRadius.circular(40),
+              border: Border.all(
+                width: 2,
+                color: Colors.amberAccent,
+              )),
           child: Center(
-            child: Text("Add to cart"),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Add to cart | ",
+                  style: TextStyle(
+                      color: Colors.black, fontWeight: FontWeight.w400),
+                ),
+                Text(
+                  "$cost ৳",
+                  style: const TextStyle(),
+                ),
+              ],
+            ),
           ),
         )
       ],

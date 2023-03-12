@@ -1,8 +1,11 @@
 import 'package:flashy_tab_bar2/flashy_tab_bar2.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'cart/view/cart_page.dart';
 import 'home/view/home_page.dart';
+import 'menu/view/menu_page.dart';
+import 'profile/view/profile_page.dart';
 
 class ButtomNav extends StatefulWidget {
   ButtomNav({super.key});
@@ -17,6 +20,8 @@ class _ButtomNavState extends State<ButtomNav> {
   List<Widget> pageList = [
     HomePage(),
     const CartPage(),
+    const ProfilePage(),
+    const MenuPage(),
   ];
 
   @override
@@ -37,6 +42,14 @@ class _ButtomNavState extends State<ButtomNav> {
             FlashyTabBarItem(
               icon: const Icon(Icons.shopping_bag),
               title: const Text('Cart'),
+            ),
+            FlashyTabBarItem(
+              icon: const Icon(Icons.person),
+              title: const Text('Profile'),
+            ),
+            FlashyTabBarItem(
+              icon: const Icon(FontAwesomeIcons.barsStaggered),
+              title: const Text('Menu'),
             ),
           ],
         ),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 const Color cblack = Color(0xff2e3440);
-const Color kDarkBrown = Color(0xff1b2028);
+Color scafolldColor = Colors.blueGrey.shade400;
 
 const Color kGrey = Color(0xffa4aaad);
 const Color kDarkGrey = Color(0xff878787);
