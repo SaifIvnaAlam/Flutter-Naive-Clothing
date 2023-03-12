@@ -35,8 +35,15 @@ class ClothingTab extends StatelessWidget {
                 child: Text(
                   tabName.toUpperCase(),
                   style: const TextStyle(
+                      letterSpacing: 6,
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
+                      shadows: <Shadow>[
+                        Shadow(
+                            offset: Offset(5.0, 5.0),
+                            blurRadius: 8.0,
+                            color: Colors.black),
+                      ],
                       fontSize: 40),
                 ),
               ),

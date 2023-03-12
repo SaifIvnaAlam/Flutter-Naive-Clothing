@@ -61,7 +61,7 @@ class _MenuPageState extends State<MenuPage> with TickerProviderStateMixin {
                 itemCount: tabs.clothing.length,
                 itemBuilder: (BuildContext context, int index) {
                   return ClothingTab(
-                    image: tabs.clothing[index],
+                    image: tabs.clothingImage[index],
                     tabName: tabs.clothing[index],
                   );
                 },

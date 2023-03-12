@@ -11,6 +11,7 @@ class Naive extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(fontFamily: GoogleFonts.roboto().fontFamily),
       home: SplashPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }

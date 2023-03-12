@@ -1,16 +1,36 @@
-# naive
+# Naive
 
-A new Flutter project.
+A Flutter ecommerce app of [Naive](https://naivebd.com/). This is my take on how it should look like as a mobile application.
 
-## Getting Started
+## About Naive
 
-This project is a starting point for a Flutter application.
+Naive is an e-commerce website based in Bangladesh. they mainly operate on Facebook. With almost 2 thousand daily consumers they are one of the favorite clothing good sellers.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshot
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![final-mockup](https://user-images.githubusercontent.com/73099787/224573563-9e344940-9029-4d14-b165-9170612027a4.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Techstack
+
+---
+
+1. `Dart `
+2. `Flutter`
+3. `RestApi`
+
+### How to Install
+
+---
+
+- First clone the repo
+  > `git clone`
+- Open project in IDE
+- Clear the disk space
+  > `flutter clean`
+- Get necessary packages
+  > `flutter pub get`
+- Run project
+
+---
+
+### Made with ❤️ by [_Saif ivna alam_](https://saifivan.vercel.app/)
